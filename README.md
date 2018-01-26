@@ -10,7 +10,10 @@ Usage:
 - Download the script
 
 - Make it executable
+```
     chmod +x spike_check
+```
 - Run:
-
+```
 ./spike_check /path/to/your/access_log
+```
