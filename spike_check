@@ -113,7 +113,7 @@ function access_log_summary() {
 	                fi
 			echo ""
 		        echo $(ColorGreen "Most Recent top 20 IP addresses: ")
-			if [[ $geo == 1 ]] ; then
+			if [[ $geo == "yes" ]] ; then
         	                oIFS="$IFS"
 	                        IFS=$'\n'
         	                for ips in $(tail -n 1000 $log 2>/dev/null | awk  '{print $1}' |sort | uniq -c | sort -rn | head -20); do
