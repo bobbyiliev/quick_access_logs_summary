@@ -17,3 +17,7 @@ Usage:
 ```
 ./spike_check /path/to/your/access_log
 ```
+
+For more information you can check out this blog post here:
+
+[Blog Post](https://bobbyiliev.com/blog/bash-script-will-summarize-access-logs-check-caused-spike-server/)
