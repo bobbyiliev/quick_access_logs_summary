@@ -21,3 +21,5 @@ Usage:
 For more information you can check out this blog post here:
 
 [Blog Post](https://bobbyiliev.com/blog/bash-script-will-summarize-access-logs-check-caused-spike-server/)
+
+
