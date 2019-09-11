@@ -1,13 +1,13 @@
 #!/bin/bash
 
-##
+###
 # 2018 Bobby I. <bobby@bobbyiliev.com>
 # Script that summarizes your access logs
 # This includes:
 # - POST requests
 # - GET requests
 # - IP logs and their geo location
-##
+###
 
 ########################
 ### Color  Variables ###
