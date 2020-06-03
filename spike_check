@@ -42,7 +42,7 @@ ColorOrange(){
 ## To disable the GEO location check set the value to 0                  ##
 ###########################################################################
 
-geoipdomain="https://ckit.tech/ip.php"
+geoipdomain="https://bobbyiliev.com/ip.php"
 
 #################
 ## Apache logs ##
