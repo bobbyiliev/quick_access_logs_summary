@@ -9,6 +9,13 @@ To request us to review code that you create, you will need to create a pull req
 Creating a pull request is described in
  [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github).
 
+## Continuous Integration
+
+This repository uses GitHub Actions for continuous integration. Each pull request will automatically:
+- Run shellcheck on all shell scripts
+- Execute the test suite
+- Verify code formatting
+
 ## Issue Creation
 
 In the event that you have a issue using the tool or have a suggest for a change but don't want to contribute code,
