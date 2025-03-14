@@ -1,0 +1,11 @@
+# Allow using source without a path
+disable=SC1091
+
+# Allow non-constant source
+disable=SC1090
+
+# Don't warn about using echo with -e
+disable=SC2039
+
+# Don't warn about using pipelines in command substitution
+disable=SC2002 
