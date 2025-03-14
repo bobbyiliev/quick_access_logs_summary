@@ -20,6 +20,6 @@ Usage:
 
 For more information you can check out this blog post here:
 
-[Blog Post](https://bobbyiliev.com/blog/bash-script-will-summarize-access-logs-check-caused-spike-server/)
+[Blog Post](https://devdojo.com/bobbyiliev/bash-script-to-summarize-your-nginx-and-apache-access-logs)
 
 
