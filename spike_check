@@ -12,27 +12,42 @@
 ########################
 ### Color  Variables ###
 ########################
-green='\e[32m'
-blue='\e[34m'
-clear='\e[0m'
-orange='\e[33m'
-red='\e[31m'
+
+# Check if the terminal supports colors
+if [ -t 1 ]; then
+	# Terminal supports colors
+	green='\033[32m'
+	blue='\033[34m'
+	clear='\033[0m'
+	orange='\033[33m'
+	red='\033[31m'
+else
+	# Terminal doesn't support colors, use empty strings
+	green=''
+	blue=''
+	clear=''
+	orange=''
+	red=''
+fi
 
 #########################
 ###  Color Functions  ###
 #########################
 
 ColorGreen() {
-	echo -ne "${green}${1}${clear}"
+	printf "${green}%s${clear}\n" "$1"
 }
+
 ColorBlue() {
-	echo -ne "${blue}${1}${clear}"
+	printf "${blue}%s${clear}\n" "$1"
 }
+
 ColorRed() {
-	echo -ne "${red}${1}${clear}"
+	printf "${red}%s${clear}\n" "$1"
 }
+
 ColorOrange() {
-	echo -ne "${orange}${1}${clear}"
+	printf "${orange}%s${clear}\n" "$1"
 }
 
 ###########################################################################
@@ -138,11 +153,13 @@ function access_log_summary() {
 
 # If no arguments are provided, show the help message
 if [[ $# -eq 0 ]]; then
+    echo ""
 	ColorGreen "    This script summarizes your access logs, optimized for Apache"
 	echo
 	ColorGreen "    Specify the log that you want to summarize.."
 	ColorOrange "    Example:"
 	ColorOrange "        ./spike_check your_log"
+    echo ""
 else
 	# If arguments are provided, run the script
 	access_log_summary "$1"
